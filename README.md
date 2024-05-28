@@ -1,6 +1,6 @@
 # Carl's dottyfiles
 
-This directory contains the dorfiles for my system
+This directory contains the dottyfiles for my system
 
 ## Requirements
 
