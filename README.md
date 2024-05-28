@@ -1,4 +1,4 @@
-# Carl's dotifiles
+# Carl's dottyfiles
 
 This directory contains the dorfiles for my system
 
