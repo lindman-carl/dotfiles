@@ -28,13 +28,11 @@ brew install --cask iterm2
 
 #### Kinto
 
+In Ubuntu select XOrg instead of Wayland in the login screen settings. Requires a restart, logout is not sufficient.
+
 ```bash
 /bin/bash -c "$(wget -qO- https://raw.githubusercontent.com/rbreaves/kinto/HEAD/install/linux.sh || curl -fsSL https://raw.githubusercontent.com/rbreaves/kinto/HEAD/install/linux.sh)"
 ```
-
-#### Use xOrg
-
-In Ubuntu select xOrg instead of Wayland in the login screen settings. Requires a restart, logout is not sufficient.
 
 ### Common
 
