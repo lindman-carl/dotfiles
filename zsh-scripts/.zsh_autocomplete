@@ -1,0 +1,10 @@
+# Carl 02-04-2024
+# Use the zsh-autocomplete plugin
+# source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
+# Accept completion from history directly
+# No more double enter
+# bindkey -M menuselect '\r' .accept-line
+
+# Make the tab key behave like a normal, by inserting the longest common substring of the possible completions
+zstyle ':autocomplete:*complete*:*' insert-unambiguous yes

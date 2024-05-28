@@ -1,0 +1,5 @@
+# Bindings for moving cursor one word left/right / Carl
+# Move cursor one word left
+bindkey "^[b" backward-word
+# Move cursor one word right
+bindkey "^[f" forward-word

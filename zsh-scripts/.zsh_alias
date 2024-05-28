@@ -1,0 +1,20 @@
+# Docker compose
+alias dcup="docker compose up -d && docker compose logs -f"
+alias dcdown="docker compose down"
+alias dclogs="docker compose logs -f"
+
+dc() {
+    if [[ $1 == "up" ]]; then
+        # Execute 'docker compose up -d' and then follow logs
+        docker compose up -d && docker compose logs -f
+        elif [[ $1 == "logs" ]]; then
+        docker compose logs -f
+    else
+        docker compose "$@"
+    fi
+}
+
+# Docker
+dpsll() {
+    docker logs $(docker ps --latest --quiet) -f
+}
