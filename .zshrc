@@ -1,5 +1,6 @@
 # ZSH auto-completion / Carl
 source "$HOME/zsh-scripts/.zsh_autocomplete"
+setopt MENU_COMPLETE
 
 # Bindings for moving cursor one word left/right / Carl
 source "$HOME/zsh-scripts/.zsh_keybindings"
@@ -11,11 +12,8 @@ source "$HOME/zsh-scripts/.zsh_alias"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # Flutter
-export PATH=~/development/flutter/bin:$PATH
-
-# Created by Carl, custom script for installing tailwindcss in a NPM-project
-alias tailwind='npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p'
+export PATH=$HOME/flutter/flutter/bin:$PATH
+export PATH=$HOME/.gem/bin:$PATH
 
 # For grouping directories first with ls /Carl
 # alias ls='gls --group-directories-first'
@@ -44,8 +42,8 @@ export PATH="$PATH:/Users/carllindman/zsh-scripts"
 # pnpm
 export PNPM_HOME="/Users/carllindman/Library/pnpm"
 case ":$PATH:" in
-    *":$PNPM_HOME:"*) ;;
-    *) export PATH="$PNPM_HOME:$PATH" ;;
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm endexport PATH="/opt/homebrew/opt/node@20/bin:$PATH"
 
@@ -55,3 +53,28 @@ export NVM_DIR="$HOME/.nvm"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+cd() {
+  builtin cd "$@" || return
+  if [ -f .nvmrc ]; then
+    nvm use
+  fi
+}
+
+
+# iOS Simulator alias /Carl
+alias sim='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
+
+# PNPM Autocompletion /Carl
+source ~/zsh-scripts/completion-for-pnpm.bash
+
+# PYENV /Carl fast Martins fel
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+# Kubectl autocomplete /Carl
+source <(kubectl completion zsh)
+
+# Oh My Posh /Carl
+if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
+  eval "$(oh-my-posh init zsh --config ~/oh-my-posh-theme.json )"
+fi

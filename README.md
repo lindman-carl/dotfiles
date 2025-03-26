@@ -81,4 +81,3 @@ Install the dotfiles with stow
 ```bash
 stow .
 ```
-

@@ -8,3 +8,8 @@
 
 # Make the tab key behave like a normal, by inserting the longest common substring of the possible completions
 zstyle ':autocomplete:*complete*:*' insert-unambiguous yes
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+
+fpath+=~/.zfunc
+autoload -Uz compinit && compinit
