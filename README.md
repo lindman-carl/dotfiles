@@ -71,7 +71,7 @@ brew install stow
 Clone this repository
 
 ```bash
-git clone git@https://github.com/lindman-carl/dotfiles
+git clone https://github.com/lindman-carl/dotfiles
 
 cd dotfiles
 ```
