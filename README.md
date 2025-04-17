@@ -66,6 +66,16 @@ sudo apt install stow
 brew install stow
 ```
 
+#### Oh-my-posh
+
+```bash
+# Linux
+curl -s https://ohmyposh.dev/install.sh | bash -s
+
+# Mac
+brew install jandedobbeleer/oh-my-posh/oh-my-posh
+```
+
 ## Installation
 
 Clone this repository
