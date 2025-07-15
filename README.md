@@ -1,88 +1,53 @@
-# Carl's dottyfiles
+# Carl's dotfiles
 
-This directory contains the dottyfiles for my system
+Carl's base dotfiles configuration repo. Uses GNU Stow to symlink dotfiles to be a bit organized.
 
 ## Requirements
 
-### Mac
-
-#### Command Line Tools for Xcode
+### MacOS
   
 ```bash
+# Command Line Tools for Xcode
 xcode-select --install
-```
 
-#### Homebrew
-
-```bash
+# Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
 
-#### iTerm2
-
-```bash
+# iTerm2
 brew install --cask iterm2
+
+# Git and GH cli
+brew install git
+brew install gh
+
+# Oh My Posh
+brew install jandedobbeleer/oh-my-posh/oh-my-posh
+
+# GNU Stow
+brew install stow
 ```
 
 ### Linux
 
-#### Kinto
-
-In Ubuntu select XOrg instead of Wayland in the login screen settings. Requires a restart, logout is not sufficient.
-
 ```bash
-/bin/bash -c "$(wget -qO- https://raw.githubusercontent.com/rbreaves/kinto/HEAD/install/linux.sh || curl -fsSL https://raw.githubusercontent.com/rbreaves/kinto/HEAD/install/linux.sh)"
-```
-
-### Common
-
-#### Git
-
-```bash
-# Linux
-sudo apt install git
-# Install GH Cli and authenticate
-# TODO: Install command GH Cli
-
-# Mac
-brew install git
-```
-
-#### Zsh
-
-```bash
-# Linux
-sudo apt install zsh
-# Mac
-brew install zsh
-
-# Set as default shell
-chsh -s $(which zsh)
-```
-
-#### Oh-my-posh
-
-```bash
-# Linux
 sudo apt update -y
 sudo apt upgrade -y
+
+# ZSH
+sudo apt install zsh
+# Set as default shell
+chsh -s $(which zsh)
+
+# Git
+sudo apt install git
+# TODO: Install command GH Cli
+
+# Oh My Posh
 sudo apt install unzip
 curl -s https://ohmyposh.dev/install.sh | bash -s
 
-# Mac
-brew install jandedobbeleer/oh-my-posh/oh-my-posh
-```
-
-#### Stow
-
-```bash
-# Install GNU Stow
-# Linux
-sudo apt update -y
-sudo apt upgrade- -y
+# GNU Stow
 sudo apt install stow 
-# Mac
-brew install stow
 ```
 
 ## Installing dotfiles
@@ -90,12 +55,22 @@ brew install stow
 ```bash
 # Clone this repo
 gh auth login
-git clone git@github.com:lindman-carl/dotfiles.git
-cd dotfiles
+git clone git@github.com:lindman-carl/dotfiles.git $HOME/dotfiles
+cd $HOME/dotfiles
 
 # First time use of stow:
 stow .
 
 # To 'restow':
 stow -R .
+```
+
+## Optional
+
+### Kinto, MacOS like keybindings for Linux (*This probably requires Ubuntu Desktop*)
+
+In Ubuntu select XOrg instead of Wayland in the login screen settings. Requires a restart, logout is not sufficient.
+
+```bash
+/bin/bash -c "$(wget -qO- https://raw.githubusercontent.com/rbreaves/kinto/HEAD/install/linux.sh || curl -fsSL https://raw.githubusercontent.com/rbreaves/kinto/HEAD/install/linux.sh)"
 ```
