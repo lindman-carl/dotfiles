@@ -43,7 +43,6 @@ In Ubuntu select XOrg instead of Wayland in the login screen settings. Requires 
 sudo apt install git
 # Install GH Cli and authenticate
 # TODO: Install command GH Cli
-gh auth login
 
 # Mac
 brew install git
@@ -77,25 +76,26 @@ brew install jandedobbeleer/oh-my-posh/oh-my-posh
 #### Stow
 
 ```bash
+# Install GNU Stow
 # Linux
-sudo apt install stow
-
+sudo apt update -y
+sudo apt upgrade- -y
+sudo apt install stow 
 # Mac
 brew install stow
 ```
 
-## Installation
-
-Clone this repository
+## Installing dotfiles
 
 ```bash
+# Clone this repo
+gh auth login
 git clone git@github.com:lindman-carl/dotfiles.git
-
 cd dotfiles
-```
 
-Install the dotfiles with stow
-
-```bash
+# First time use of stow:
 stow .
+
+# To 'restow':
+stow -R .
 ```
