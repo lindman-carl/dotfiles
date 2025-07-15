@@ -16,9 +16,11 @@ export LANG=en_US.UTF-8
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 if [[ "$HOST" == "Carl" ]]; then
+    echo "$HOST: zsh config for MacBook Pro M1"
     source "$HOME/zsh-config/.zshrc_mbpm1"
 fi
 
 if [[ "$HOST" == "gmk" ]]; then
+    echo "$HOST: zsh config for GMK"
     source "$HOME/zsh-config/.zshrc_gmk"
 fi
