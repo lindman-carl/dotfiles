@@ -1,3 +1,6 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 
 # Local ZSH configuration file for gmk@gmk GMKtec NucBox M5 Plus
+
+# oh-my-posh default installation directory
+export PATH="$PATH:/home/gmk/.local/bin"

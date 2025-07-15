@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 # Carl 02-04-2024
 # Use the zsh-autocomplete plugin
 # source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh

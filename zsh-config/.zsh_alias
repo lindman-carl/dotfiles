@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 
 # Docker compose aliases
 alias dcup="docker compose up -d && docker compose logs -f"

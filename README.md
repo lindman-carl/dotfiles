@@ -54,9 +54,24 @@ brew install git
 ```bash
 # Linux
 sudo apt install zsh
-
 # Mac
 brew install zsh
+
+# Set as default shell
+chsh -s $(which zsh)
+```
+
+#### Oh-my-posh
+
+```bash
+# Linux
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt install unzip
+curl -s https://ohmyposh.dev/install.sh | bash -s
+
+# Mac
+brew install jandedobbeleer/oh-my-posh/oh-my-posh
 ```
 
 #### Stow
@@ -67,16 +82,6 @@ sudo apt install stow
 
 # Mac
 brew install stow
-```
-
-#### Oh-my-posh
-
-```bash
-# Linux
-curl -s https://ohmyposh.dev/install.sh | bash -s
-
-# Mac
-brew install jandedobbeleer/oh-my-posh/oh-my-posh
 ```
 
 ## Installation

@@ -1,6 +1,8 @@
+#!/usr/bin/env zsh
+
 source "$HOME/zsh-config/.zsh_alias"
-source "$HOME/zsh-config/.zsh_keybindings"
 source "$HOME/zsh-config/.zsh_autocomplete"
+source "$HOME/zsh-config/.zsh_keybindings"
 source "$HOME/zsh-config/completion-for-pnpm.bash"
 
 setopt MENU_COMPLETE
@@ -10,7 +12,6 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
 fi
 
 export LANG=en_US.UTF-8
-export PATH="$PATH:$HOME/dotfiles/"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
