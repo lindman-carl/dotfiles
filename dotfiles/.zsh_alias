@@ -1,0 +1,19 @@
+#!/bin/zsh
+
+# Docker compose aliases
+alias dcup="docker compose up -d && docker compose logs -f"
+alias dcdown="docker compose down"
+alias dclogs="docker compose logs -f"
+
+dc() {
+    docker compose "$@"
+}
+
+# Create a directory and cd into it
+# Usage: mcd <directory>
+mcd() {
+    mkdir -p "$1" && cd "$1"
+}
+
+# PNPM short alias
+alias pn="pnpm"

@@ -41,6 +41,9 @@ In Ubuntu select XOrg instead of Wayland in the login screen settings. Requires 
 ```bash
 # Linux
 sudo apt install git
+# Install GH Cli and authenticate
+# TODO: Install command GH Cli
+gh auth login
 
 # Mac
 brew install git
@@ -81,7 +84,7 @@ brew install jandedobbeleer/oh-my-posh/oh-my-posh
 Clone this repository
 
 ```bash
-git clone https://github.com/lindman-carl/dotfiles
+git clone git@github.com:lindman-carl/dotfiles.git
 
 cd dotfiles
 ```

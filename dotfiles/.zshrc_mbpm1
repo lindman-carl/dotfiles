@@ -1,0 +1,35 @@
+#!/bin/zsh
+
+# Local ZSH configuration file for carllindman@carl Macbook Pro M1
+
+# For grouping directories first with ls
+# alias ls='gls --group-directories-first'
+alias ls='gls --color -h --group-directories-first'
+
+
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# az cli autocomplete
+autoload -U +X compinit && compinit
+autoload bashcompinit && bashcompinit source /opt/homebrew/etc/bash_completion.d/az
+
+# PNPM
+export PNPM_HOME="$HOME/Library/pnpm"
+case ":$PATH:" in
+    *":$PNPM_HOME:"*) ;;
+    *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+
+# Load NVM (Node Version Manager)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# Android SDK and Java
+export JAVA_HOME="$(brew --prefix openjdk@17)/libexec/openjdk.jdk/Contents/Home"
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"
+export PATH="$ANDROID_HOME/platform-tools:$PATH"
+
+# Windsurf cli
+export PATH="$HOME/.codeium/windsurf/bin:$PATH"
