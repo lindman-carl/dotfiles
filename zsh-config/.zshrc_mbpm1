@@ -6,7 +6,7 @@
 # alias ls='gls --group-directories-first'
 alias ls='gls --color -h --group-directories-first'
 
-
+# psql
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # az cli autocomplete
