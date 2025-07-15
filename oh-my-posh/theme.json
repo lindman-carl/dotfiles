@@ -11,7 +11,7 @@
           "properties": {
             "style": "full"
           },
-          "style": "diamond",
+          "style": "powerline",
           "template": " {{ .Path }} ",
           "type": "path"
         },
