@@ -5,7 +5,7 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#c44569",
+          "background": "#2F436E",
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b6",
           "properties": {
@@ -16,7 +16,7 @@
           "type": "os"
         },
         {
-          "background": "#894883",
+          "background": "#e4920e",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "properties": {
@@ -27,7 +27,7 @@
           "type": "path"
         },
         {
-          "background": "#f24666",
+          "background": "#586F6B",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
@@ -35,7 +35,7 @@
           "type": "node"
         },
         {
-          "background": "#f24666",
+          "background": "#F56960",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "properties": {
