@@ -21,5 +21,5 @@ fi
 
 # Load Oh My Posh theme
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-    eval "$(oh-my-posh init zsh --config $HOME/oh-my-posh/theme.json)"
+    eval "$(oh-my-posh init zsh --config $HOME/oh-my-posh/uew.omp.json)"
 fi
