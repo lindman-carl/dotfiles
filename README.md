@@ -74,6 +74,13 @@ stow .
 stow -R .
 ```
 
+## Installing scripts
+
+```bash
+chmod +x install.sh
+./install.sh
+```
+
 ## Optional
 
 ### Kinto, MacOS like keybindings for Linux (*This probably requires Ubuntu Desktop*)
