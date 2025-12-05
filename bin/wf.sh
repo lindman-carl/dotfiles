@@ -1,5 +1,10 @@
 #!/usr/bin/env zsh
 
+# Dependencies
+# - inotify-tools
+
+# sudo apt install inotify-tools
+
 CMD="$1"
 FILE="$2"
 
