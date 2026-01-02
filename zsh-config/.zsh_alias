@@ -17,3 +17,6 @@ mcd() {
 
 # PNPM short alias
 alias pn="pnpm"
+
+# Python alias
+alias python="python3"
