@@ -19,3 +19,6 @@ esac
 
 # alias
 alias ls="ls -lA --color"
+
+# vscode manual shell integration
+[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
