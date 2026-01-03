@@ -1,0 +1,319 @@
+{
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook",
+    "*.svg": "default"
+  },
+  "editor.suggestSelection": "first",
+  "editor.autoClosingQuotes": "always",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.classpath": true,
+    "**/.devcontainer": true,
+    "**/.devops": true,
+    "**/.DS_Store": true,
+    "**/.factorypath": true,
+    "**/.flox": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.project": true,
+    "**/.pytest_cache": true,
+    "**/.ruff_cache": true,
+    "**/.settings": true,
+    "**/.sonarlint": true,
+    "**/.svn": true,
+    "**/*.crswap": true,
+    "**/Thumbs.db": true,
+    "**/venv": true
+  },
+  "python.analysis.useImportHeuristic": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "eslint.run": "onType",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "never"
+  },
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[java]": {
+    "editor.defaultFormatter": "mwpb.java-prettier-formatter"
+  },
+  "[javascriptreact]": {
+    "editor.tabSize": 2,
+    "breadcrumbs.showArrays": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.startupEditor": "none",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.formatOnSave": true,
+  "[typescriptreact]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.guides.bracketPairs": true,
+  "editor.linkedEditing": true,
+  "files.associations": {
+    "*.html": "html",
+    "*.json": "jsonc",
+    "*.ts": "typescript"
+  },
+  "Codegenx.Token": "073dd42f661d76af49e70db713420119a24b1524a4813a28b972cf3753307188.b146db87075bd6bd891c2d8def5e25799c5b3ffaf3b4ebf92d98399743e1509b",
+  "http.systemCertificates": false,
+  "workbench.colorCustomizations": {},
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "yaml": true,
+    "javascript": true,
+    "typescriptreact": true,
+    "code-runner-output": true,
+    "typescript": true,
+    "less": true,
+    "csv": false,
+    "css": true,
+    "csharp": true,
+    "xml": true,
+    "bicep": true,
+    "dart": true,
+    "yml": true,
+    "bash": true
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off",
+    "editor.codeActionsOnSave": {
+      "quickfix.insertSemicolon": "explicit"
+    }
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "css.lint.unknownProperties": "ignore",
+  "editor.stickyScroll.enabled": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "git.confirmSync": false,
+  "react-native-tools.showUserTips": false,
+  "svelte.enable-ts-plugin": true,
+  "redhat.telemetry.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.sideBar.location": "right",
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.tabSize": 2,
+  "explorer.confirmDragAndDrop": false,
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "python.analysis.inlayHints.callArgumentNames": true,
+  "javascript.format.enable": false,
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "cmake.configureOnOpen": false,
+  "azureResourceGroups.groupBy": "resourceType",
+  "prettier.printWidth": 100,
+  "azureResourceManagerTools.parameterFiles": {
+    "/Users/carllindman/Documents/afry/tm/iac/FSS-All-In-One-Template.json": "FSS-All-In-One-Template.parameters.json",
+    "/Users/carllindman/Documents/afry/tm/iac/FSS-Scanner-Stack-Template.json": "FSS-Scanner-Stack-Template.parameters.json",
+    "/Users/carllindman/Documents/afry/tm/iac/FSS-Storage-Stack-Template.json": "FSS-Storage-Stack-Template.parameters.json",
+    "/Users/carllindman/Documents/afry/tm/iac/fss-templates/FSS-Scanner-Stack-Template.json": "FSS-Scanner-Stack-Template.parameters.json",
+    "/Users/carllindman/Documents/afry/tm/iac/fss-templates/FSS-Storage-Stack-Template.json": "FSS-Storage-Stack-Template.parameters.json",
+    "/Users/carllindman/Documents/afry/tm/deploy/fss-templates/FSS-Scanner-Stack-Template.json": "FSS-Scanner-Stack-Template.parameters.json",
+    "/Users/carllindman/Documents/afry/tm/deploy/fss-templates/FSS-Storage-Stack-Template.json": "FSS-Storage-Stack-Template.parameters.json"
+  },
+  "azureFunctions.showProjectWarning": false,
+  "cmake.showOptionsMovedNotification": false,
+  "git.openRepositoryInParentFolders": "never",
+  "staticWebApps.showStaticWebAppsCliWarning": false,
+  "editor.minimap.enabled": false,
+  "powermode.enabled": false,
+  "prisma.showPrismaDataPlatformNotification": false,
+  "typescript.tsserver.log": "off",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.editor.alwaysShowEditorActions": true,
+  "dart.flutterSdkPath": "/Users/carllindman/flutter/flutter",
+  "dart.flutterCreatePlatforms": [
+    "ios"
+  ],
+  "dart.flutterHotReloadOnSave": "allIfDirty",
+  "supermaven.enable": {
+    "*": true
+  },
+  "search.exclude": {
+    "**/*.code-search": true,
+    "**/bower_components": true,
+    "**/node_modules": false
+  },
+  "explorer.confirmDelete": false,
+  "git.suggestSmartCommit": false,
+  "editor.accessibilitySupport": "off",
+  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+  "lldb.launch.expressions": "native",
+  "git.ignoreRebaseWarning": true,
+  "remote.SSH.connectTimeout": 60,
+  "remote.SSH.useLocalServer": false,
+  "remote.SSH.remotePlatform": {
+    "x1-work-sysair": "linux",
+    "x1-sysair": "linux",
+    "x1-sysair-mobile": "linux",
+    "cirklo-prod": "linux",
+    "x1": "linux",
+    "stegra-dev-vm": "linux",
+    "gmk": "linux",
+    "gmk-tailscale": "linux"
+  },
+  "playwright.reuseBrowser": true,
+  "workbench.colorTheme": "GitHub Dark Dimmed",
+  "makefile.configureOnOpen": false,
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "svg.preview.mode": "svg",
+  "bicep.enableSurveys": false,
+  "todo-tree.filtering.useBuiltInExcludes": "file excludes",
+  "[shellscript]": {
+    "editor.defaultFormatter": "shakram02.bash-beautify"
+  },
+  "accessibility.voice.keywordActivation": "inlineChat",
+  "git.blame.statusBarItem.enabled": true,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "errorLens.enabledDiagnosticLevels": [
+    "warning",
+    "info"
+  ],
+  "docker.extension.enableComposeLanguageServer": false,
+  "editor.defaultFormatter": "charliermarsh.ruff",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
+  "breadcrumbs.enabled": false,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "indentRainbow.colors": [
+    "rgba(247, 37, 133,0.15)",
+    "rgba(181, 23, 158,0.15)",
+    "rgba(114, 9, 183, 0.15)",
+    "rgba(86, 11, 173,0.15)",
+    "rgba(72, 12, 168,0.15)",
+    "rgba(58, 12, 163,0.15)",
+    "rgba(63, 55, 201,0.15)",
+    "rgba(63, 55, 201,0.1)",
+    "rgba(63, 55, 201,0.05)",
+    "rgba(63, 55, 201,0.025)"
+  ],
+  "python.analysis.typeCheckingMode": "standard",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "g",
+        "I"
+      ],
+      "commands": [
+        "editor.action.goToImplementation"
+      ],
+    },
+    {
+      "before": [
+        "f"
+      ],
+      "after": [
+        "<leader>",
+        "<leader>",
+        "w"
+      ],
+    },
+    {
+      "before": [
+        "F"
+      ],
+      "after": [
+        "<leader>",
+        "<leader>",
+        "b"
+      ],
+    }
+  ],
+  "vim.camelCaseMotion.enable": true,
+  "vim.leader": " ",
+  "vim.easymotion": true,
+  "vim.easymotionKeys": "hklyuiopnmqwertzxcvbasdgjf",
+  "sonarlint.connectedMode.connections.sonarqube": [
+    {
+      "serverUrl": "https://prod.sonarqube.axpo.com",
+      "connectionId": "https-prod-sonarqube-axpo-com",
+      "disableNotifications": true
+    }
+  ],
+  "settingsSync.ignoredExtensions": [
+    "sonarsource.sonarlint-vscode",
+    "flox.flox"
+  ],
+  "sonarlint.automaticAnalysis": true,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "explorer.confirmPasteNative": false,
+  "terminal.integrated.stickyScroll.enabled": false,
+  "extensions.ignoreRecommendations": true,
+  "chat.tools.urls.autoApprove": {
+    "https://labs.ig.com": {
+      "approveRequest": true,
+      "approveResponse": false
+    }
+  },
+  "chat.editing.confirmEditRequestRemoval": false,
+  "[xsl]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+}
