@@ -1,0 +1,19 @@
+[font]
+size = 15.0
+normal = { family = "MesloLGLDZ Nerd Font Mono", style = "Regular" }
+
+[keyboard]
+bindings = [
+  { key = "Left",  mods = "Command", chars = "\u001bb" },
+  { key = "Right", mods = "Command", chars = "\u001bf" },
+  { key = "Left",  mods = "Command|Shift", chars = "\u001bB" },
+  { key = "Right", mods = "Command|Shift", chars = "\u001bF" },
+
+  { key = "Up",    mods = "Command", chars = "\u001b<" },
+  { key = "Down",  mods = "Command", chars = "\u001b>" },
+
+  { key = "Left",  mods = "Shift", chars = "\u001b[1;2D" },
+  { key = "Right", mods = "Shift", chars = "\u001b[1;2C" },
+  { key = "Up",    mods = "Shift", chars = "\u001b[1;2A" },
+  { key = "Down",  mods = "Shift", chars = "\u001b[1;2B" },
+]

@@ -23,3 +23,21 @@ fi
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
     eval "$(oh-my-posh init zsh --config $HOME/oh-my-posh/uew.omp.json)"
 fi
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# opencode
+export PATH="$HOME/.opencode/bin:$PATH"
+export OPENCODE_MODEL="github-copilot/claude-sonnet-4.6"
+export OPENCODE_OPUS_MODEL="github-copilot/claude-opus-4.6"
+export OPENCODE_HAIKU_MODEL="github-copilot/claude-haiku-4.5"
+
+# Enable selection (region highlighting)
+autoload -Uz select-word-style
+zle_highlight+=(region:bg=blue)
+
+
+# Shift + Left/Right
+bindkey "^[[1;2D" backward-char
+bindkey "^[[1;2C" forward-char
