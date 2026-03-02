@@ -14,9 +14,34 @@ tools:
 
 **Feature to implement:** $ARGUMENTS
 
+## Step 0: Resolve GitHub Issue (if applicable)
+
+Before anything else, check whether `$ARGUMENTS` refers to a GitHub issue. Supported formats:
+
+- Full URL: `https://github.com/owner/repo/issues/123`
+- Short ref: `owner/repo#123`
+- Bare number: `#123` (use the repo of the current workspace)
+
+**If a GitHub issue is detected:**
+
+1. Run `gh issue view <number> --repo <owner/repo> --json title,body,labels,comments` to fetch the issue.
+   - If `gh` is not available, fall back to `webfetch` on the GitHub API URL:
+     `https://api.github.com/repos/<owner>/<repo>/issues/<number>`
+2. Extract the issue **title**, **body**, and any relevant **comments** as the authoritative feature description.
+3. Set `FEATURE_DESCRIPTION` to the combined content (title + body + comments summary).
+4. Record the issue URL in the generated plan file for traceability.
+
+**If no GitHub issue is detected:**
+
+- Set `FEATURE_DESCRIPTION` to `$ARGUMENTS` verbatim.
+
+All subsequent steps must use `FEATURE_DESCRIPTION` as the feature description instead of `$ARGUMENTS` directly.
+
+---
+
 ## Resolve Output Filename
 
-Before doing anything else, check whether `$ARGUMENTS` contains a `Save plan as <filename>` instruction
+Check whether `$ARGUMENTS` contains a `Save plan as <filename>` instruction
 (case-insensitive, e.g. "Save plan as .PLAN_UPGRADE_PRISMA").
 
 - If found: set `PLAN_FILE` to the specified filename (e.g. `.PLAN_UPGRADE_PRISMA`)
@@ -145,6 +170,7 @@ The generated plan file (saved as `$PLAN_FILE`) should follow this template:
 # Feature Implementation Plan
 
 **Feature**: [Feature name]
+**GitHub Issue**: [URL or N/A]
 **Created**: [Date]
 **Status**: [Planning/In Progress/Completed/Blocked]
 

@@ -118,10 +118,11 @@ Structure the body using this template — adapt or omit sections that do not ap
 gh pr create \
   --base <base-branch> \
   --title "<title>" \
-  --body "<description>"
+  --body "<description>" \
+  --draft
 ```
 
-If the repo requires a draft PR first (e.g. CI must pass before review), add `--draft`.
+Always create as a draft unless the user explicitly asks for a ready-for-review PR (omit `--draft` only in that case).
 
 ---
 

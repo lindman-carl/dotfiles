@@ -61,7 +61,7 @@ For every file with uncommitted changes (and ONLY those files), apply these prin
 
 - Commented-out code - delete it, git remembers
 
-- Section dividers like `// ========` or `// --- UTILS ---`
+- Section dividers like `// ========`, `// --- UTILS ---`, or `// -----...-----` with labels
 
 - Any comment that restates what the code does
 
