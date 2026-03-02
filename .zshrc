@@ -29,7 +29,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # opencode
 export PATH="$HOME/.opencode/bin:$PATH"
-export OPENCODE_MODEL="github-copilot/claude-sonnet-4.6"
+export OPENCODE_SONNET_MODEL="github-copilot/claude-sonnet-4.6"
 export OPENCODE_OPUS_MODEL="github-copilot/claude-opus-4.6"
 export OPENCODE_HAIKU_MODEL="github-copilot/claude-haiku-4.5"
 

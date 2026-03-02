@@ -1,1 +1,7 @@
 .DS_Store
+
+# Agent-generated markdown files (e.g. WEBAPP_ARCHITECTURE.md)
+*ARCHITECTURE*.md
+*PLAN*.md
+*DESIGN*.md
+*DIAGRAM*.md

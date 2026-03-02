@@ -1,0 +1,285 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "build": {
+      "hidden": true
+    },
+    "explore": {
+      "model": "{env:OPENCODE_HAIKU_MODEL}"
+    },
+    "plan": {
+      "hidden": true
+    },
+    "einstein": {
+      "color": "#5d77ea",
+      "model": "{env:OPENCODE_OPUS_MODEL}",
+      "permission": {
+        "bash": {
+          "*": "allow",
+          "> *": "ask",
+          "chmod *": "ask",
+          "chown *": "ask",
+          "dd *": "ask",
+          "gh *": "ask",
+          "gh api *": "allow",
+          "gh issue list*": "allow",
+          "gh issue view*": "allow",
+          "gh pr checks*": "allow",
+          "gh pr diff*": "allow",
+          "gh pr list*": "allow",
+          "gh pr status*": "allow",
+          "gh pr view*": "allow",
+          "gh release list*": "allow",
+          "gh release view*": "allow",
+          "gh repo view*": "allow",
+          "gh run list*": "allow",
+          "gh run view*": "allow",
+          "gh search *": "allow",
+          "gh status*": "allow",
+          "git branch -D*": "ask",
+          "git checkout -- *": "ask",
+          "git clean*": "ask",
+          "git commit*": "ask",
+          "git push --force*": "ask",
+          "git push*": "ask",
+          "git reset --hard*": "ask",
+          "git restore *": "ask",
+          "git stash drop*": "ask",
+          "kill *": "ask",
+          "killall *": "ask",
+          "mv *": "ask",
+          "pkill *": "ask",
+          "rm *": "ask",
+          "rm -f*": "ask",
+          "rm -r*": "ask",
+          "rmdir *": "ask",
+          "shred *": "ask",
+          "sudo *": "ask",
+          "truncate *": "ask"
+        },
+        "edit": "allow"
+      },
+      "temperature": 0.3
+    },
+    "soulja-boy": {
+      "color": "#bf8c78",
+      "model": "{env:OPENCODE_SONNET_MODEL}",
+      "permission": {
+        "bash": {
+          "*": "allow",
+          "> *": "ask",
+          "chmod *": "ask",
+          "chown *": "ask",
+          "dd *": "ask",
+          "gh *": "ask",
+          "gh api *": "allow",
+          "gh issue list*": "allow",
+          "gh issue view*": "allow",
+          "gh pr checks*": "allow",
+          "gh pr diff*": "allow",
+          "gh pr list*": "allow",
+          "gh pr status*": "allow",
+          "gh pr view*": "allow",
+          "gh release list*": "allow",
+          "gh release view*": "allow",
+          "gh repo view*": "allow",
+          "gh run list*": "allow",
+          "gh run view*": "allow",
+          "gh search *": "allow",
+          "gh status*": "allow",
+          "git add*": "allow",
+          "git branch -D*": "ask",
+          "git checkout -- *": "ask",
+          "git clean*": "ask",
+          "git commit*": "allow",
+          "git push --force*": "ask",
+          "git push*": "ask",
+          "git reset --hard*": "ask",
+          "git restore *": "ask",
+          "git stash": "allow",
+          "git stash drop*": "ask",
+          "git stash list*": "allow",
+          "git stash pop*": "allow",
+          "git stash push*": "allow",
+          "kill *": "ask",
+          "killall *": "ask",
+          "mv *": "ask",
+          "pkill *": "ask",
+          "rm *": "ask",
+          "rm -f*": "ask",
+          "rm -r*": "ask",
+          "rmdir *": "ask",
+          "shred *": "ask",
+          "sudo *": "ask",
+          "truncate *": "ask"
+        },
+        "edit": "allow"
+      },
+      "temperature": 0.3
+    },
+    "sickan": {
+      "model": "{env:OPENCODE_OPUS_MODEL}",
+      "permission": {
+        "bash": {
+          "*": "deny",
+          "cat *": "allow",
+          "du *": "allow",
+          "echo *": "allow",
+          "fd *": "allow",
+          "file *": "allow",
+          "find *": "allow",
+          "gh api *": "allow",
+          "gh issue list*": "allow",
+          "gh issue view*": "allow",
+          "gh pr checks*": "allow",
+          "gh pr diff*": "allow",
+          "gh pr list*": "allow",
+          "gh pr status*": "allow",
+          "gh pr view*": "allow",
+          "gh release list*": "allow",
+          "gh release view*": "allow",
+          "gh repo view*": "allow",
+          "gh run list*": "allow",
+          "gh run view*": "allow",
+          "gh search *": "allow",
+          "gh status*": "allow",
+          "git branch": "allow",
+          "git branch *": "allow",
+          "git diff": "allow",
+          "git diff *": "allow",
+          "git log": "allow",
+          "git log *": "allow",
+          "git remote *": "allow",
+          "git show *": "allow",
+          "git status": "allow",
+          "git status *": "allow",
+          "grep *": "allow",
+          "head *": "allow",
+          "ls": "allow",
+          "ls *": "allow",
+          "node --version": "allow",
+          "npm --version": "allow",
+          "npm list *": "allow",
+          "pwd": "allow",
+          "python --version": "allow",
+          "rg *": "allow",
+          "tail *": "allow",
+          "tree": "allow",
+          "tree *": "allow",
+          "wc *": "allow",
+          "which *": "allow"
+        }
+      },
+      "temperature": 0.1,
+      "tools": {
+        "edit": false,
+        "write": false
+      }
+    },
+    "speed": {
+      "color": "#22C55E",
+      "model": "{env:OPENCODE_HAIKU_MODEL}",
+      "permission": {
+        "bash": {
+          "*": "allow",
+          "> *": "ask",
+          "chmod *": "ask",
+          "chown *": "ask",
+          "dd *": "ask",
+          "gh *": "ask",
+          "gh api *": "allow",
+          "gh issue list*": "allow",
+          "gh issue view*": "allow",
+          "gh pr checks*": "allow",
+          "gh pr diff*": "allow",
+          "gh pr list*": "allow",
+          "gh pr status*": "allow",
+          "gh pr view*": "allow",
+          "gh release list*": "allow",
+          "gh release view*": "allow",
+          "gh repo view*": "allow",
+          "gh run list*": "allow",
+          "gh run view*": "allow",
+          "gh search *": "allow",
+          "gh status*": "allow",
+          "git add*": "allow",
+          "git branch -D*": "ask",
+          "git checkout -- *": "ask",
+          "git clean*": "ask",
+          "git commit*": "allow",
+          "git push --force*": "ask",
+          "git push*": "ask",
+          "git reset --hard*": "ask",
+          "git restore *": "ask",
+          "git stash drop*": "ask",
+          "kill *": "ask",
+          "killall *": "ask",
+          "mv *": "ask",
+          "pkill *": "ask",
+          "rm *": "ask",
+          "rm -f*": "ask",
+          "rm -r*": "ask",
+          "rmdir *": "ask",
+          "shred *": "ask",
+          "sudo *": "ask",
+          "truncate *": "ask"
+        },
+        "edit": "ask"
+      },
+      "temperature": 0.3
+    }
+  },
+  "compaction": {
+    "auto": true
+  },
+  "mcp": {
+    "context7": {
+      "enabled": true,
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "playwright": {
+      "command": [
+        "npx",
+        "@playwright/mcp@latest",
+        "--extension"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "trigger": {
+      "command": [
+        "npx",
+        "trigger.dev@4.3.2",
+        "mcp"
+      ],
+      "enabled": true,
+      "type": "local"
+    }
+  },
+  "disabled_providers": [
+    "azure",
+    "azure-cognitive-services"
+  ],
+  "instructions": [
+    "instructions.md"
+  ],
+  "model": "{env:OPENCODE_SONNET_MODEL}",
+  "plugin": [
+    "@mohak34/opencode-notifier@latest",
+    "opencode-wakatime"
+  ],
+  "share": "disabled",
+  "small_model": "{env:OPENCODE_HAIKU_MODEL}",
+  "watcher": {
+    "ignore": [
+      "node_modules/**",
+      "dist/**",
+      "build/**",
+      ".git/**",
+      ".next/**",
+      "coverage/**",
+      "*.log"
+    ]
+  }
+}
